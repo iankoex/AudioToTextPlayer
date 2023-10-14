@@ -14,6 +14,8 @@
 		3C5E998C2ADAC3B700EE4394 /* AudioToTextPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E998B2ADAC3B700EE4394 /* AudioToTextPlayerTests.swift */; };
 		3C5E99962ADAC3B800EE4394 /* AudioToTextPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E99952ADAC3B800EE4394 /* AudioToTextPlayerUITests.swift */; };
 		3C5E99982ADAC3B800EE4394 /* AudioToTextPlayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E99972ADAC3B800EE4394 /* AudioToTextPlayerUITestsLaunchTests.swift */; };
+		3C5E99A52ADAC3D000EE4394 /* AudioTapProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E99A42ADAC3D000EE4394 /* AudioTapProcessor.swift */; };
+		3C5E99A72ADAC3F300EE4394 /* AudioVisualService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E99A62ADAC3F300EE4394 /* AudioVisualService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		3C5E99912ADAC3B700EE4394 /* AudioToTextPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioToTextPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5E99952ADAC3B800EE4394 /* AudioToTextPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioToTextPlayerUITests.swift; sourceTree = "<group>"; };
 		3C5E99972ADAC3B800EE4394 /* AudioToTextPlayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioToTextPlayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C5E99A42ADAC3D000EE4394 /* AudioTapProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTapProcessor.swift; sourceTree = "<group>"; };
+		3C5E99A62ADAC3F300EE4394 /* AudioVisualService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				3C5E99792ADAC3B500EE4394 /* AudioToTextPlayerApp.swift */,
 				3C5E997B2ADAC3B500EE4394 /* ContentView.swift */,
+				3C5E99A42ADAC3D000EE4394 /* AudioTapProcessor.swift */,
+				3C5E99A62ADAC3F300EE4394 /* AudioVisualService.swift */,
 				3C5E997D2ADAC3B700EE4394 /* Assets.xcassets */,
 				3C5E997F2ADAC3B700EE4394 /* AudioToTextPlayer.entitlements */,
 				3C5E99802ADAC3B700EE4394 /* Preview Content */,
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5E997C2ADAC3B500EE4394 /* ContentView.swift in Sources */,
+				3C5E99A52ADAC3D000EE4394 /* AudioTapProcessor.swift in Sources */,
+				3C5E99A72ADAC3F300EE4394 /* AudioVisualService.swift in Sources */,
 				3C5E997A2ADAC3B500EE4394 /* AudioToTextPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +432,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "to convert audio to text in real time";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,10 +443,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iankoex.AudioToTextPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "to convert audio to text in real time";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,10 +482,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iankoex.AudioToTextPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
